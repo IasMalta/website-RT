@@ -39,7 +39,7 @@ var swiper = new Swiper('.home-slider', {
   }
 })
 
-var swiper = new Swiper('.home-slide', {
+var swiper = new Swiper('.home-slider', {
   autoplay: {
     delay: 5000
   }
