@@ -121,7 +121,7 @@ section {
 
 .header .navbar a {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--black);
   text-transform: capitalize;
   margin: 0 1rem;
 }
@@ -426,7 +426,7 @@ section {
 
 .home .slide .content p {
   font-size: 1.4rem;
-  color: var(--light-color);
+  color: var(--black);
   line-height: 2;
   padding: 1rem 0;
 }
@@ -935,19 +935,25 @@ user-select: none;
 }
 
 .footer-container h1 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
+
+.anatel-logo{
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
 
 .redes-sociais {
   display: flex;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-container .redes-sociais a {
   height: 2.5rem;
   width: 2.5rem;
-  line-height: 5rem;
+  line-height: 3rem;
   font-size: 2rem;
   color: var(--white);
   cursor: pointer;
@@ -963,7 +969,7 @@ user-select: none;
 .footer-container .list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   list-style-type: none;
 }
 
