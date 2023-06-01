@@ -121,7 +121,7 @@ section {
 
 .header .navbar a {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--white);
   text-transform: capitalize;
   margin: 0 1rem;
 }
@@ -379,6 +379,80 @@ section {
   color: var(--white);
 }
 
+.slider{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content{
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+ 
+.slider-content input, .img-mobile{
+  display: none;
+}
+
+.slide-box{
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img{
+  width: 100%;
+}
+
+.nav-manual, .nav-auto{
+  position: absolute;
+  width: 100%;
+  margin-top: 65%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+  border: 1px solid var(--red);
+  padding: 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+margin-right: 0.6rem ;
+}
+
+.nav-manual .manual-btn:hover{
+  background-color: var(--red);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+   background-color: var(--red-dark);
+}
+
+#radio1:checked ~ .primeiro{
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+  margin-left: -50%;
+}
+
+
+
+
+/*  style do slide 1
 .home {
   padding: 0;
 }
@@ -394,6 +468,7 @@ section {
   position: relative;
   background-size: cover !important;
   background-position: center !important;
+  
 }
 
 .home .slide::before {
@@ -403,7 +478,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(
+  /*background: -webkit-gradient(
     linear,
     left top,
     right top,
@@ -412,7 +487,7 @@ section {
   background: linear-gradient(70deg, var(--white), transparent);
 }
 
-.home .slide .content {
+/* .home .slide .content {
   width: 50rem;
   position: relative;
 }
@@ -429,7 +504,7 @@ section {
   color: var(--black);
   line-height: 2;
   padding: 1rem 0;
-}
+} 
 
 .home .swiper-button-next,
 .home .swiper-button-prev {
@@ -458,7 +533,8 @@ section {
 
 .home .swiper-button-prev {
   right: 7rem;
-}
+} 
+Fim do style do slide 1*/  
 
 .about .row {
   display: -webkit-box;
@@ -819,6 +895,8 @@ section {
   resize: none;
 }
 
+
+
 /*.blogs {
   background: var(--light-color); 
 }
@@ -1036,7 +1114,21 @@ user-select: none;
 
   .header .navbar a {
     display: block;
+    color: var(--black);
     margin: 2rem;
+  }
+
+  .img-desktop{
+    display: none;
+  }
+
+  .img-mobile{
+    display: block;
+  }
+
+  .nav-auto .nav-manual{
+    margin-top: 60%;
+
   }
 }
 

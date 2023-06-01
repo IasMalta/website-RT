@@ -37,7 +37,7 @@
         <!------<a href="#projects">projetos</a> ------>
         <a href="#pricing">Planos</a>
         <a href="#footer">Contatos</a>
-        <a href="#">Área do Cliente</a>
+        <a href="https://ixcsoft.rafaeltelecom.com.br/central_assinante_web/login" target="_blank">Área do Cliente</a>
         <!----- <a href="#blogs">.....</a>  -------->
       </nav>
 
@@ -94,54 +94,78 @@
       </div>
     </div>
 
-    <section class="home" id="home">
+
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+          <img class="img-desktop" src="assents/02.png" alt="slide 1">
+          <img class="img-mobile" src="assents/02.png" alt="slide 1 mob">
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="assents/01.png" alt="slide 2">
+          <img class="img-mobile" src="assents/01.png" alt="slide 2 mob">
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="assents/02.png" alt="slide 3">
+          <img class="img-mobile" src="assents/02.png" alt="slide 3 mob">
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>          
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!----Estilo 1 slide---->
+    <!---<section class="home" id="home">
       <div class="swiper home-slider">
         <div class="swiper-wrapper" data-swiper-autoplay="5000">
           <section
             class="swiper-slide slide"
-            style="background: url(assents/nastya-dulhiier-OKOOGO578eo-unsplash.jpg);"
+            style="background: url(assents/01.png);"
           >
             <div class="content">
-              <h3>Conecte-se com o futuro! Internet rápida e estável.</h3>
+              <h3></h3>
               <p>
-              </p>
-              <!---<a href="#about" class="btn">Saiba mais</a> -->
-            </div>
-          </section>
-
-          <section
-            class="swiper-slide slide"
-            style="background: url(assents/jogos\ online.jpg)"
-          >
-            <div class="content">
-              <h3>Acelere seus downloads, jogos e streaming.</h3>
-              <p>
-                com nossa internet de fibra óptica de até 400Mbps
-              </p>
-              <a href="#about" class="btn">Entre em contato</a>
-            </div>
-          </section>
-
-          <section
-            class="swiper-slide slide"
-            style="
-              background: url(assents/internet\ rural.jpg);
-            "
-          >
-            <div class="content">
-              <h3>Aproveite o poder da internet na zona rural.</h3>
-              <p>
-                *confira a disponibilidade
               </p>
               <a href="#about" class="btn">Saiba mais</a>
-            </div>
-          </section>
+            </div> 
+          </section> 
+
+         <section
+            class="swiper-slide slide"
+            style="background: url(assents/02.png)"
+          >
+            <div class="content">
+              <h3></h3>
+              <p>
+              </p>
+              <a href="#about" class="btn">Entre em contato</a>
+            </div> 
+          </section> 
+
         </div>
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-    </section>
+    </section>   Fim do slide 1--->
 
     <section class="about" id="about">
       <h1 class="heading">Sobre Nós</h1>
@@ -416,11 +440,11 @@
           frameborder="0"
         ></iframe>
 
-        <form action="https://formsubmit.co/ajax/iasmiin.malta@gmail.com" method="POST">
+        <form action="https://formsubmit.co/ajax/iasmiin.malta@gmail.com" method="POST" data-form>
           <h2>Entre em contato</h2>
-          <input type="text" placeholder="nome" class="box" />
+          <input type="text" placeholder="nome" class="box" required/>
           <input type="email" placeholder="email" class="box" />
-          <input type="number" placeholder="número" class="box" />
+          <input type="number" placeholder="número" class="box" required/>
           <textarea
             name=""
             placeholder="mensagem"
@@ -428,7 +452,7 @@
             cols="30"
             rows="10"
           ></textarea>
-          <input type="submit" value="Enviar mensagem" class="btn" />
+          <input type="submit" value="Enviar mensagem" class="btn" data-button />
         </form>
       </div>
     </section>
@@ -495,8 +519,8 @@
             <li><a href="#">0800 042 0319</a></li>
             <li><a href="#">empresarafaeltelecom@gmail.com</a></li>
             <div class="redes-sociais">
-              <a href="#" class="fab fa-facebook"></a>
-              <a href="#" class="fab fa-instagram"></a>
+              <a href="https://www.facebook.com/Rafael.Telecomm" target="_blank" class="fab fa-facebook"></a>
+              <a href="https://www.instagram.com/telecom_rafael/" target="_blank" class="fab fa-instagram"></a>
               <a href="#" class="fab fa-whatsapp"></a>
             </div>
           </ul>
