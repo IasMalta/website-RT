@@ -49,6 +49,10 @@ function proximaImg() {
   document.getElementById('radio' + cont).checked = true
 }
 
+var date = new Date().getFullYear()
+
+document.getElementById('year').innerHTML = date
+
 /*var swiper = new Swiper('.home-slider', {
   loop: true,
   grabCursor: true,
@@ -63,46 +67,3 @@ var swiper = new Swiper('.home-slider', {
     delay: 5000
   }
 }) */
-
-/*class FormSubmit {
-  constructor(settings) {
-    this.settings = settings;
-    this.form = document.querySelector(settings.form);
-    this.formButton = document.querySelector(setting.button);
-    if (this.form) {
-      this.url = this.form.getAttribute("action");
-    }
-  }
-};
-
-displaySuccess() {
-  this.form.innerHTML = this.settings.success;
-}
-
-displayError() {
-tthis.form.innerHTML = this.settings.error;
-}
-
-async sendForm() {
-  await fetch(this.url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: "",
-
-  });
-}
-
-init() {
-  if (this.form) this.formButtin.addEventListener("click", () => this.displaySuccess());
-  return this;
-}
-
-const FormSubmit = new FormSubmit({
-  form: "[data-form]",
-  button: "[data-button]",
-  success: "<h1 class='success'>Mensagem Enviada! </h1>",
-  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>"
-}); */
